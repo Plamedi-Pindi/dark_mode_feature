@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
+# Dark Mode Com Tailwindcss
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto que visou treinar os conhecimentos teóricos do Tailwindcss para criar um template que permite alternar entre os temas escuro e claro.
 
-Currently, two official plugins are available:
+## Tecnologias e Ferramentas usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **React.js**
 
-## Expanding the ESLint configuration
+2. **Typescript**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. **Tailwindcss**
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+4. **Lucide React** => Os icons utilizados from da Lucide React
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+5. **React Context** => Para partilhar estados com outros componentes
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+6. **LocalStorage** => Para peristir informação sengudo a preferência do usário
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Funcionalidades
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Botão / selector / dropdown que permite alternar os temas
+* Os Elementos são estilizados de acordo ao tema definido
+* Containers, card, textos, icons e botões que permitem obter uma experiência visual no ato de alternar os temas
+
+## Limitações
+
+O projeto está apenas na versão desktop, pois a energia toda foi concentrado para se obte uma experiência de dark mode.
+
+## Recomendações
+
+Atualizar o projeto para obter:
+* Responsividade
+* Mais funcionalidades na navbar (Barra de navegação)
+
+## Como usar o projeto?
+
+Se tiver o interesse em pelo codigo fonte deste projeto ou quesier ter uma experiência pessoal, siga os seguintes passos:
+
+1. **Clonar o repositório**
+    ```bash
+    git clone https://github.com/Plamedi-Pindi/dark_mode_feature.git
+
+2. **Instalar as dependências**
+    ```bash
+    npm install
+
+3. **Executar o projeto**
+    ``` bash
+    npm run dev
+
+3. **Acesser o domínio local**
+      ```bash
+      http://localhost:5173
+
+
