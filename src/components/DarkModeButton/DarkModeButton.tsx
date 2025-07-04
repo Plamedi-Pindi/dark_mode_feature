@@ -91,7 +91,7 @@ interface SwitchButtonProps {
 
 const SwitchButton = forwardRef<HTMLDivElement, SwitchButtonProps>(({ theme }, ref?) => {
     return (
-        <div ref={ref} className={`w-10 h-10 rounded-xl border-2 border-gray-300 bg-white flex items-center justify-center relative ${theme === 'dark' && 'dark:bg-gray-800 dark:border-gray-600'}`}>
+        <div ref={ref} className={`w-10 h-10 rounded-xl border-[0.5px] border-gray-300 bg-white flex items-center justify-center relative ${theme === 'dark' && 'dark:bg-gray-800 dark:border-gray-600'}`}>
             <button>
                 {theme === 'light'
                     ? (<Sun className="text-blue-500" />)
@@ -112,7 +112,7 @@ const List = forwardRef<HTMLUListElement, ListProps>(({ children }, ref) => {
     const [theme] = useThemeContext()
 
     return (
-        <ul ref={ref} className={`absolute bg-white w-34 h-auto right-6 top-14 rounded-xl border-2 border-gray-300 overflow-hidden hidden ${theme === 'dark' && 'dark:bg-gray-800 dark:border-gray-600 dark:text-gray-50'}`}>
+        <ul ref={ref} className={`absolute bg-white w-34 h-auto right-6 top-14 rounded-xl border-2 border-gray-300 overflow-hidden hidden ${theme === 'dark' && 'dark:bg-gray-800/80 dark:backdrop-blur-xl ] dark:border-gray-600 dark:text-gray-50'}`}>
             {children}
         </ul>
     )

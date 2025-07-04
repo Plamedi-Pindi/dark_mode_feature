@@ -23,16 +23,6 @@ Este é um projeto que visou treinar os conhecimentos teóricos do Tailwindcss p
 * Os Elementos são estilizados de acordo ao tema definido
 * Containers, card, textos, icons e botões que permitem obter uma experiência visual no ato de alternar os temas
 
-## Limitações
-
-O projeto está apenas na versão desktop, pois a energia toda foi concentrado para se obte uma experiência de dark mode.
-
-## Recomendações
-
-Atualizar o projeto para obter:
-* Responsividade
-* Mais funcionalidades na navbar (Barra de navegação)
-
 ## Como usar o projeto?
 
 Se tiver o interesse em pelo codigo fonte deste projeto ou quesier ter uma experiência pessoal, siga os seguintes passos:

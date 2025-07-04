@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
 * {
-    @apply transition-colors duration-700 ;
+    @apply transition-colors duration-700  ;
+
 }
+
+html,
+body {
+    @apply bg-gray-50
+}
+.backgroundS {
+
+    /* background-image: url("https://transparenttextures.com/patterns/food.png"); */
+
+    /* background-image: url("https://transparenttextures.com/patterns/inspiration-geometry.png"); */
+}
+

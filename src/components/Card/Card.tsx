@@ -10,7 +10,7 @@ const Card = ({ icon }: { icon: ReactNode }) => {
     const [theme] = useThemeContext();
 
     return (
-        <div className={`w-60 h-86 p-6 border-2 border-gray-300 rounded-xl bg-white shadow hover:scale-102 duration-300 hover:border-blue-400 ${theme === "dark" && 'dark:bg-gray-50/8 dark:border-gray-600 dark:backdrop-blur-3xl'} `}>
+        <div className={`w-60 h-86 p-6 border-2 border-gray-300 rounded-xl bg-white/50 backdrop-blur-sm shadow hover:scale-102 duration-300 hover:border-blue-400 ${theme === "dark" && 'dark:text-gray-50 dark:bg-gray-400/8 dark:border-gray-600 '} `}>
             <div className={`w-14 h-14 bg-blue-400 rounded-xl flex items-center justify-center mb-8`}  >
                 {icon}
             </div>
