@@ -12,7 +12,7 @@ import { useThemeContext } from "../contexts/ThemeContext";
 const Mainpage = () => {
     const [theme] = useThemeContext()
     return (
-        <div className={` ${theme === 'dark' && 'dark:bg-gray-900'} bg-[url('./bg.png')] min-h-screen w-full   flex flex-col items-center justify-center relative pt-10 pb-20 overflow-hidden`}>
+        <div className={` ${theme === 'dark' && 'dark:bg-gray-900'} bg-[url('/bg.png')] min-h-screen w-full   flex flex-col items-center justify-center relative pt-10 pb-20 overflow-hidden`}>
             <NavigationBar />
 
             <main className="p-4 max-w-[1020px] m-auto">
